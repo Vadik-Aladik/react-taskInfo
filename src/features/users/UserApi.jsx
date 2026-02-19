@@ -2,8 +2,6 @@ const BASE_URL = 'https://dummyjson.com/users';
 
 async function getFetch(url){
     try{
-        // const url = buildURL();
-        console.log(url);
         const data = await fetch(url);
         const response = await data.json();
         return response;

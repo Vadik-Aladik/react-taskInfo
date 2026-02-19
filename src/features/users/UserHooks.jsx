@@ -74,8 +74,6 @@ export default function useUsers(){
         setSort({ field, order });
         }
         setCurrentPage(1); // сбрасываем страницу
-
-        console.log(field);
     }
 
     function nextPage(){

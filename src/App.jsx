@@ -46,14 +46,12 @@ function App() {
     <main className='py-5 container max-w-[1400px] mx-auto'>
       <div className=' my-5 flex items-center gap-2'>
         <SelectComponent change={(e)=> {
-          console.log(e.target.value);
           setFilter((prev)=>({
             ...prev,
             key: e.target.value
           }));
         }} list={listFilter} defaultListValue={filter.key} />
         <InputComponent classCss="w-72" placeHolder='Введите значение для фильтрации' type="text" input={(e)=> {
-          console.log(e.target.value);
           setFilter((prev)=>({
             ...prev,
             value: e.target.value
